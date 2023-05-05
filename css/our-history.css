@@ -1,0 +1,25 @@
+.our-history{
+    /* min-height: 100vh; */
+    position: relative;
+}
+
+.our-history-img img{
+    position: relative;
+}
+
+.rectangle{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    background-color: var(--coffe-white);
+    top: 180px;
+    left: 652px;
+}
+
+.title-history{
+    margin-bottom: 100px;
+}
+
+.our-history-text{
+    width: 40%;
+}
