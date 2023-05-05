@@ -13,20 +13,46 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body id="inicio">
     <!-- NAVBAR -->
-    <nav>
-      <ul>
-        <li>Inicio</li>
-        <li>Nuestra Historia</li>
-        <li>Detalles del evento</li>
-        <li>Ubicación</li>
-        <li>Registro</li>
-      </ul>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nuestra-historia">Nuestra Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#detalle-evento">Detalles del evento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacion">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#registro">Registro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- INICIO -->
-    <div id="inicio">
+    <div>
       <span>Nos complace extenderte una cordial invitación a nuestra boda</span>
       <h1>Ester & Raúl</h1>
       <span>
@@ -43,14 +69,20 @@
     </div>
 
     <!-- Nuestra historia -->
-    <div>
+    <div id="nuestra-historia">
       <h2>Nuestra historia</h2>
       <div>
+        <img
+          src="./img/nsplsh_8d724000cbde4279bf61b743a0ee9752~mv2.webp"
+          alt=""
+        />
+      </div>
+      <!-- <div>
         <img
           src="./img/bd9511_b4534fe654b24dc982b029add4ef4c6a~mv2.webp"
           alt=""
         />
-      </div>
+      </div> -->
       <div>
         <span>
           Nuestra historia comenzó en medio de la pandemia, cuando la
@@ -76,7 +108,7 @@
     </div>
 
     <!-- Detalles -->
-    <div>
+    <div id="detalle-evento">
       <h2>Detalles</h2>
       <div>
         <h3>Evento</h3>
@@ -95,7 +127,7 @@
     </div>
 
     <!-- Ubicación -->
-    <div>
+    <div id="ubicacion">
       <h2>Ubicación</h2>
       <div>MAPA</div>
       <div>
@@ -119,7 +151,7 @@
     </div>
 
     <!-- Croquis de las mesas -->
-    <div>
+    <div id="registro">
       <div>
         <h2>Croquis de las mesas</h2>
         <img
@@ -141,5 +173,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
