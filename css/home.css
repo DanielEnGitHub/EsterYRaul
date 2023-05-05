@@ -1,0 +1,48 @@
+.home {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  min-height: 100vh;
+}
+
+.home h1,
+.home .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  .home {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  .home p {
+    font-size: 1.15rem;
+  }
+  .home h1,
+  .home .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home h1,
+  .home .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.btn-outline-primary{
+    font-weight: bold !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover{
+    font-weight: bold !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+    background-color: var(--primary) !important;
+}
+
+.card-home{
+    max-width: 600px !important;
+}
