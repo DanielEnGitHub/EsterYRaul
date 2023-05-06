@@ -50,5 +50,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const detalle = document.getElementById("detalles");
-  detalle.onclick = () => window.location="#detalle-evento";
+  detalle.onclick = () => (window.location = "#detalle-evento");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const date = new Date("2023-07-29");
+
+  // Unix timestamp (in seconds) to count down to
+  var twoDaysFromNow = date.getTime() / 1000 + 54030 * 2 ;
+
+  // Set up FlipDown
+  var flipdown = new FlipDown(twoDaysFromNow)
+
+    // Start the countdown
+    .start()
+
+    // Do something when the countdown ends
+    .ifEnded(() => {
+      console.log("The countdown has ended!");
+    });
 });
