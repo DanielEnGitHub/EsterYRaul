@@ -5,6 +5,7 @@
 
 .our-history-img img {
   position: relative;
+  max-width: 90%;
 }
 
 .rectangle {
@@ -35,6 +36,6 @@
 
 @media only screen and (max-width: 500px) {
   .rectangle {
-    max-width: 450px;
+    max-width: 320px;
   }
 }
