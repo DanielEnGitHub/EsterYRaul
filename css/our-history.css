@@ -28,9 +28,20 @@
   width: 40%;
 }
 
+
+@media only screen and (max-width: 1200px) {
+  .our-history-text {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .rectangle {
     max-width: 500px;
+  }
+
+  .our-history-text {
+    width: 100%;
   }
 }
 

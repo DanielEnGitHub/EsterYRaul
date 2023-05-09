@@ -9,7 +9,7 @@
 /* Rotor group headings */
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
   color: rgb(255, 255, 255);
-  background-color: var(--purple);
+  background-color: var(--green);
   margin-bottom: 10px;
 }
 
@@ -18,20 +18,20 @@
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
 .flipdown.flipdown__theme-dark
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
-  background-color: var(--purple);
+  background-color: var(--green);
 }
 /* Rotor tops */
 .flipdown.flipdown__theme-dark .rotor,
 .flipdown.flipdown__theme-dark .rotor-top,
 .flipdown.flipdown__theme-dark .rotor-leaf-front {
   color: #ffffff;
-  background-color: var(--purple);
+  background-color: var(--green);
 }
 /* Rotor bottoms */
 .flipdown.flipdown__theme-dark .rotor-bottom,
 .flipdown.flipdown__theme-dark .rotor-leaf-rear {
   color: #fafafa;
-  background-color: var(--purple-b);
+  background-color: var(--green-b);
 }
 /* Hinge */
 .flipdown.flipdown__theme-dark .rotor:after {
