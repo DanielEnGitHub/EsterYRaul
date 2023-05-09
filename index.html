@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/our-history.css" />
     <link rel="stylesheet" href="./css/details.css" />
+    <link rel="stylesheet" href="./css/ubication.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -139,8 +140,10 @@
           <source src="./video/matrimonio-33244.mp4" type="video/mp4" />
         </video>
         <div class="justify-content-center text-center detail-content">
-          <div class="sub-title">Detalles</div>
-          <div class="d-flex flex-column flex-lg-row justify-content-center align-content-center">
+          <div class="sub-title mb-3">Detalles</div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-center align-content-center"
+          >
             <div class="align-self-center detail-content-text">
               <div class="sub-title mb-4">Detalles del Evento</div>
               <span>
@@ -154,22 +157,33 @@
                 Confirmar asistencia
               </button>
             </div>
-              <img
-                class="w-25 align-self-center detail-img  mt-4 mt-lg-0"
-                src="./img/detail-img.jpg"
-                alt=""
-              />
+            <img
+              class="w-25 align-self-center detail-img mt-4 mt-lg-0"
+              src="./img/detail-img.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       <!-- Ubicación -->
-      <div id="ubicacion">
-        <h2>Ubicación</h2>
-        <div>MAPA</div>
-        <div>
-          <div>
-            <h3>Transporte Público</h3>
+      <div
+        class="p-5 bg-white justify-content-center text-center"
+        id="ubicacion"
+      >
+        <div class="sub-title mb-5">Ubicación</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6358871336297!2d-90.5160217!3d14.6198063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a231d1cac935%3A0x830e0bbe3c7d42a6!2sConquistador%20Hotel!5e0!3m2!1ses!2sgt!4v1683608768964!5m2!1ses!2sgt"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="mb-5"
+        ></iframe>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-center mb-1">
+          <div
+            class="content-ubication align-self-center align-self-lg-start mb-4"
+          >
+            <div class="sub-title-min mb-3">Transporte Público</div>
             <span>
               Del Trébol zona 3, tomar Ruta 12 hacia la Municipalidad,
               posteriormente tomar Ruta 9, hacia Cuatro Grados Sur y al lado
@@ -177,8 +191,8 @@
             </span>
           </div>
 
-          <div>
-            <h3>Con Vehículo</h3>
+          <div class="content-ubication align-self-center align-self-lg-start">
+            <div class="sub-title-min mb-3">Con Vehículo</div>
             <span>
               Por vía 5 y Ruta 4, zona 4, (ver indicaciones en el mapa).
               Ingresar por el parqueo del Hotel
