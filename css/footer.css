@@ -1,0 +1,17 @@
+.footer{
+    background-color: #d1ba8e;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer span{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer img{
+    width: 40px;
+}
