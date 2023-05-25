@@ -7,7 +7,45 @@
 // Scripts
 //
 
+// text function
+const validateDate = () => {
+  const fechaActual = new Date();
+  const fechaObjetivo = new Date("2023-07-29 12:00:00");
+
+  let validate = false;
+
+  // selectors
+  const afterEvent1 = document.querySelector("#after-event-1");
+  const afterEvent2 = document.querySelector("#after-event-2");
+  const afterEvent3 = document.querySelector("#after-event-3");
+  const afterEvent4 = document.querySelector("#after-event-4");
+  const flipdown = document.querySelector("#flipdown");
+  const afterEvent = document.querySelector("#after-event-content");
+  const mainTitle = document.querySelector("#main-title");
+
+  if (fechaActual >= fechaObjetivo) {
+    validate = true;
+    afterEvent3.remove();
+    flipdown.remove();
+    mainTitle.remove();
+    afterEvent.classList.remove("hide");
+  }
+
+  afterEvent1.innerHTML = !validate
+    ? "Nos complace extenderte una cordial invitación a nuestra boda"
+    : "";
+
+  afterEvent2.innerHTML = !validate
+    ? "para que nos acompañes en uno de los días más importante de nuestras vidas"
+    : "";
+
+  afterEvent4.innerHTML = !validate
+    ? "En Hotel Conquistador Ciudad de Guatemala"
+    : "El inicio de un nuevo capítulo en nuestra historia juntos.";
+};
+
 window.addEventListener("DOMContentLoaded", (event) => {
+  validateDate();
   // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
@@ -57,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const date = new Date("2023-07-28 06:00:00");
 
   // Unix timestamp (in seconds) to count down to
-  var twoDaysFromNow = date.getTime() / 1000 + 54000 * 2 ;
+  var twoDaysFromNow = date.getTime() / 1000 + 54000 * 2;
 
   // Set up FlipDown
   var flipdown = new FlipDown(twoDaysFromNow)
@@ -66,7 +104,5 @@ document.addEventListener("DOMContentLoaded", () => {
     .start()
 
     // Do something when the countdown ends
-    .ifEnded(() => {
-      console.log("The countdown has ended!");
-    });
+    .ifEnded(() => {});
 });

@@ -87,7 +87,15 @@ body {
 
 .home-main {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 495px !important;
+  height: 680px;
+}
+
+.hide {
+  display: none;
 }
 
 .bg-home {
