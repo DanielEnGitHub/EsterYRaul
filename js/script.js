@@ -54,10 +54,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const date = new Date("2023-07-29");
+  const date = new Date("2023-07-28 06:00:00");
 
   // Unix timestamp (in seconds) to count down to
-  var twoDaysFromNow = date.getTime() / 1000 + 54030 * 2 ;
+  var twoDaysFromNow = date.getTime() / 1000 + 54000 * 2 ;
 
   // Set up FlipDown
   var flipdown = new FlipDown(twoDaysFromNow)
