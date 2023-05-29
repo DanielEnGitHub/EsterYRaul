@@ -107,6 +107,10 @@ body {
   left: -40px;
 }
 
+.link-eventia {
+  text-decoration:none;
+}
+
 @media only screen and (max-width: 600px) {
   .home-main {
     position: relative;
