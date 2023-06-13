@@ -11,6 +11,7 @@
 const validateDate = () => {
   const fechaActual = new Date();
   const fechaObjetivo = new Date("2023-07-29 12:00:00");
+  const fechaLimite = new Date("2023-07-08 00:00:00");
 
   let validate = false;
 
@@ -22,12 +23,18 @@ const validateDate = () => {
   const flipdown = document.querySelector("#flipdown");
   const afterEvent = document.querySelector("#after-event-content");
   const mainTitle = document.querySelector("#main-title");
+  const btnHide = document.querySelector("#btn-hide");
+
+  if (fechaActual >= fechaLimite) {
+    btnHide.remove();
+  }
 
   if (fechaActual >= fechaObjetivo) {
     validate = true;
     afterEvent3.remove();
     flipdown.remove();
     mainTitle.remove();
+    afterEvent.classList.remove("hide");
     afterEvent.classList.remove("hide");
   }
 
@@ -92,7 +99,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const date = new Date("2023-07-28 06:00:00");
+  const date = new Date("2023-07-28 05:40:00");
 
   // Unix timestamp (in seconds) to count down to
   var twoDaysFromNow = date.getTime() / 1000 + 54000 * 2;

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/ubication.css" />
     <link rel="stylesheet" href="./css/register.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/tootlip.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -123,11 +124,7 @@
         <div class="justify-content-center text-center">
           <div class="sub-title title-history">Nuestra historia</div>
           <div class="our-history-img mb-5">
-            <img
-              src="./img/Logo_RE.png"
-              alt=""
-              width="300px"
-            />
+            <img src="./img/Logo_RE.png" alt="logo_re.png" width="300px" />
           </div>
           <div class="ms-auto me-auto our-history-text">
             <div class="mb-5 oh-txt-1">
@@ -162,17 +159,24 @@
                   Dirección: Vía 5 4-68, Cdad de Guatemala 01004, Guatemala
                 </div>
               </div>
+
               <a
                 href="https://eventia-app.vercel.app/#/verificar-invitacion"
                 target="_blank"
                 class="link-eventia"
               >
-                <button
-                  type="button"
-                  class="d-block btn btn-primary ms-auto me-auto mt-4"
+                <span
+                  tooltip="Fecha Límite de confirmación 8 de Julio"
+                  flow="down"
                 >
-                  Confirmar asistencia
-                </button>
+                  <button
+                    id="btn-hide"
+                    type="button"
+                    class="btn btn-primary ms-auto me-auto mt-4"
+                  >
+                    Confirmar asistencia
+                  </button>
+                </span>
               </a>
             </div>
             <img
