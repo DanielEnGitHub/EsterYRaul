@@ -1,19 +1,11 @@
-#registro{
-    position: relative;
-    z-index: -1;
-    background-image: url("../img/Screenshot_20230509_023503.png") !important;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .img-register{
-        width: 200px;
-    }
+#registro {
+  position: relative;
+  z-index: -1;
+  background-image: url("../img/Screenshot_20230509_023503.png") !important;
 }
 
 @media only screen and (max-width: 500px) {
-    .img-register{
-        width: 150px !important;
-    }
+  .img-register {
+    width: 300px !important;
+  }
 }
-
