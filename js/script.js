@@ -11,7 +11,7 @@
 const validateDate = () => {
   const fechaActual = new Date();
   const fechaObjetivo = new Date("2023-07-29 12:00:00");
-  const fechaLimite = new Date("2023-07-08 00:00:00");
+  const fechaLimite = new Date("2023-21-08 00:00:00");
 
   let validate = false;
 
